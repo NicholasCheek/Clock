@@ -1,0 +1,60 @@
+html {
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(to top right, mediumseagreen, seagreen);
+}
+
+.clock {
+    background: white;
+    height: 30vw;
+    width: 30vw;
+    border: .5rem solid black;
+    border-radius: 50%;
+    margin: 10vh auto;
+}
+
+.clock-face {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    transform: translateY(-2.5px);
+}
+
+.hand {
+    background-color: black;
+    position: absolute;
+    transform: rotate(0deg);
+    transform-origin: 50% 100%;
+    transition: 0.1s cubic-bezier(0, 1.85, .83, .67);
+}
+
+.hour-hand {
+    height: 30%;
+    width: 2%;
+    top: 20%;
+    left: 49%;
+}
+
+.min-hand {
+    height: 40%;
+    width: 2%;
+    top: 10%;
+    left: 49%;
+}
+
+.second-hand {
+    height: 45%;
+    width: 1%;
+    top: 5%;
+    left: 49.5%;
+}
+
+.center {
+    position: absolute;
+    width: 5%;
+    height: 5%;
+    background-color: black;
+    border-radius: 50%;
+    top: 47.5%;
+    left: 47.5%;
+}
